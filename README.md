@@ -2,14 +2,12 @@
 
 LIVE HERE - https://shriyansh-20.github.io/Ophelia/
 
-<img width="1224" height="772" alt="Screenshot 2026-04-24 at 3 36 33 AM" src="https://github.com/user-attachments/assets/954fecd7-3107-413e-bceb-b163ccdd186a" />
-
-
-
 I built this as part of my application for the Software Engineer I role at Ophelia.
+I have researched your website and about the work you do thoroughly and thus I urge you to go through the widget I created which reflects exactly that - my depth of understanding of the work you do at Ophelia.
 
 Instead of just describing ideas, I wanted to ship something real that could improve the onboarding experience.
 
+<img width="1224" height="772" alt="Screenshot 2026-04-24 at 3 36 33 AM" src="https://github.com/user-attachments/assets/954fecd7-3107-413e-bceb-b163ccdd186a" />
 ---
 
 ## What this is
