@@ -1,0 +1,261 @@
+.widget {
+  border: 1px solid rgba(124,140,255,0.15);
+  border-radius: 18px;
+  overflow: hidden;
+  font-family: 'DM Sans', 'Helvetica Neue', sans-serif;
+  background: linear-gradient(180deg, #11131a 0%, #0f1117 100%);
+  max-width: 600px;
+  margin: 2.5rem auto;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+}
+
+/* Top chrome */
+.chromeBar {
+  background: #0b0d12;
+  padding: 12px 18px;
+  border-bottom: 1px solid #1c1f26;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dots { display: flex; gap: 5px; }
+.dotRed { width: 10px; height: 10px; border-radius: 50%; background: #ff5f56; }
+.dotYellow { width: 10px; height: 10px; border-radius: 50%; background: #ffbd2e; }
+.dotGreen { width: 10px; height: 10px; border-radius: 50%; background: #27c93f; }
+
+.urlBar {
+  font-size: 13px;
+  color: #cbd5ff;
+  background: #1a1d26;
+  padding: 6px 18px;
+  border-radius: 20px;
+  flex: 1;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Body */
+.body { padding: 2rem 2.5rem; }
+
+.intro {
+  font-size: 15px;
+  color: #d1d5db;
+  margin-bottom: 1.25rem;
+  text-align: center;
+}
+
+/* Progress */
+.progressWrap {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 1.25rem;
+}
+
+.progressSeg {
+  flex: 1;
+  height: 4px;
+  border-radius: 2px;
+  background: #2a2f3a;
+}
+
+.progressDone {
+  background: #7c8cff;
+}
+
+/* Step container (fix for dark emptiness) */
+.stepWrap {
+  animation: fadeUp 0.2s ease;
+  background: rgba(255, 255, 255, 0.02);
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Question */
+.question {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+
+/* Options */
+.optionGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.optBtn {
+  font-size: 15px;
+  padding: 12px 22px;
+  border: 1px solid #2a2f3a;
+  border-radius: 10px;
+  background: #181c25;
+  color: #e6e8ee;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  font-weight: 600;
+}
+
+.optBtn:hover {
+  background: #7c8cff;
+  color: #fff;
+  border-color: #7c8cff;
+  box-shadow: 0 0 0 2px rgba(124,140,255,0.25);
+}
+
+/* States */
+.allStates {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  max-height: 200px;
+  overflow-y: auto;
+  justify-content: center;
+}
+
+.stateBtn {
+  font-size: 13px;
+  padding: 7px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 1px solid #2a2f3a;
+  background: #151821;
+  color: #bbb;
+}
+
+.stateBtnEligible {
+  color: #7c8cff;
+  border-color: #7c8cff;
+}
+
+.stateBtnEligible:hover {
+  background: #7c8cff;
+  color: #fff;
+}
+
+.stateBtnNot {
+  opacity: 0.5;
+}
+
+/* Hint */
+.stateHint {
+  font-size: 13px;
+  color: #888;
+  text-align: center;
+}
+
+.hintDotGreen {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #7c8cff;
+  display: inline-block;
+}
+
+.hintDotGray {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #555;
+  display: inline-block;
+}
+
+/* Result */
+.resultBox {
+  border-radius: 12px;
+  padding: 1.2rem 1.5rem;
+  display: flex;
+  gap: 16px;
+  background: #151821;
+  border: 1px solid #2a2f3a;
+}
+
+.resultSuccess {
+  border-color: #7c8cff;
+}
+
+.resultNeutral {
+  border-color: #3b82f6;
+}
+
+.resultIcon {
+  font-size: 22px;
+  color: #7c8cff;
+}
+
+.resultTitle {
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.resultSub {
+  font-size: 14px;
+  color: #aaa;
+}
+
+/* Actions */
+.resultActions {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+}
+
+.ctaBtn {
+  background: #7c8cff;
+  color: white;
+  padding: 12px 28px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.2s;
+}
+
+.ctaBtn:hover {
+  background: #6366f1;
+}
+
+.resetBtn {
+  color: #aaa;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* Disclaimer */
+.disclaimer {
+  font-size: 12px;
+  color: #777;
+  text-align: center;
+}
+
+/* Loading */
+.loadingDots {
+  padding: 2rem;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.loadingDots span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #7c8cff;
+  animation: blink 1.2s infinite;
+}
+
+@keyframes blink {
+  0%, 80%, 100% { opacity: 0.2; }
+  40% { opacity: 1; }
+}
